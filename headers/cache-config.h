@@ -21,7 +21,7 @@ class CacheFactory {
     public:
         CacheFactory(char** argv);
         ~CacheFactory();
-        const CacheSimulator& buildCache();
+        const Cache& buildCache();
 }
 
 #endif

@@ -5,6 +5,8 @@
 #include "./cache-config.h"
 
 class Cache {
+    private:
+        
     public:
         Cache(CacheConfig config);
         ~Cache();
