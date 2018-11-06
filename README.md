@@ -165,7 +165,7 @@ For example, in order to compile a multithreaded C++ program with GCC 8.2, you c
 Implement your cache simulator so that it can support up to 4 simulated processors operating in parallel. Each processor will have its own personal cache. These caches will all share a common bus that is connected to a shared main memory. For our simulations, you can assume that the main memory uses a pipelined implementation and can deliver cache blocks to each processor with the same latency as the single core version.
 
 ## Cache Operation
-Since we are working with multiple processors we now have to consider how we can keep the data consistent across multiple caches. This could be problematic if multiple threads happen to need access to the same data in memory. There are multiple techniques for dealing with this problem. Please read the Wikipedia page for an overview of the issue: [cache coherence](https://en.wikipedia.org/wiki/Cache_coherence)Links to an external site.
+Since we are working with multiple processors we now have to consider how we can keep the data consistent across multiple caches. This could be problematic if multiple threads happen to need access to the same data in memory. There are multiple techniques for dealing with this problem. Please read the Wikipedia page for an overview of the issue: [cache coherence](https://en.wikipedia.org/wiki/Cache_coherence).
 
 In this project you will use a bus-snooping protocol to address the challenge of cache coherence.
 
@@ -176,10 +176,9 @@ If a snooping cache sees a read request for a cached block, no action is taken (
 With the addition of the coherence challenge, the multi-thread cache simulator provides the same functionality as the single-core version.
 
 ## 572 Extra Credit
-If you want to earn *extra credit*, also implement the MESI cache coherence protocol.
-https://en.wikipedia.org/wiki/MESI_protocol (Links to an external site.)Links to an external site.
+If you want to earn extra credit, also implement the [MESI cache coherence protocol](https://en.wikipedia.org/wiki/MESI_protocol).
 
-Note that your cache should support write-back operation in order to implement MESI.
+*Note that your cache should support write-back operation in order to implement MESI.*
 
 Recall that the final line of the input configuration file indicates the coherence protocol (0 = basic write-invalidate protocol, 1 = MESI protocol). Your code will select the appropriate coherence policy based on this input.
 
@@ -252,7 +251,7 @@ Any chart or graphs in your written report must have labels for both the vertica
 
 For the source code, you must organize your source code/header files into a logical folder structure and create a tar file that contains the directory structure. Your code must be able to compile on flip.engr.oregonstate.edu. If your code does not compile on the engineering servers you will receive a 0 grade for all implementation portions of the grade.
 
-You need to create a Makefile that can be used to compile your project from source code. If you need a refresher, please see this helpful page (Links to an external site.)Links to an external site.. If the Makefile is written correctly, the grader should be able to download your TAR file, extract it, and run the “make” command to compile your program. The resulting executable file should be named: “cache_sim”.
+You need to create a Makefile that can be used to compile your project from source code. If you need a refresher, please see [this helpful page](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html). If the Makefile is written correctly, the grader should be able to download your TAR file, extract it, and run the “make” command to compile your program. The resulting executable file should be named: “cache_sim”.
 
 ## Grading and Evaluation
 CS/CE 472 students can complete the 572 project if they prefer (and must complete the 572 write-up, rather than the undergraduate version). Extra credit will be awarded to 472 students who choose to complete this task.
