@@ -1,9 +1,10 @@
 #include <iostream>
+#include "./headers/constants.h"
+#include "./headers/cache.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-    
-    cout << "Hello world!" << endl;    
+    CacheFactory factory = new CacheFactory(argv);
     return 0;
 }
