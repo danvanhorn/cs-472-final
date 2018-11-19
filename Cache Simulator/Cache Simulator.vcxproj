@@ -109,13 +109,24 @@
     <CleanCommandLine>echo Cleaning...</CleanCommandLine>
   </PropertyGroup>
   <ItemGroup>
+    <ClInclude Include="CacheBlock.h" />
+    <ClInclude Include="CacheSet.h" />
     <ClInclude Include="J:\cs472\final-project\src\CacheController.h" />
     <ClInclude Include="J:\cs472\final-project\src\CacheSimulator.h" />
     <ClInclude Include="J:\cs472\final-project\src\CacheStuff.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CacheBlock.cpp" />
+    <ClCompile Include="CacheSet.cpp" />
     <ClCompile Include="J:\cs472\final-project\src\CacheController.cpp" />
     <ClCompile Include="J:\cs472\final-project\src\CacheSimulator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="J:\cs472\final-project\resources\simpletracefile" />
+    <None Include="J:\cs472\final-project\resources\test-config" />
+    <None Include="J:\cs472\final-project\resources\test-trace" />
+    <None Include="J:\cs472\final-project\resources\testconfig" />
+    <None Include="J:\cs472\final-project\resources\tracefile.out" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
