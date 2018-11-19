@@ -1,4 +1,0 @@
-
-CacheSimulator::CacheSimulator(string tracePath){
-
-}
