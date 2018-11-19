@@ -3,15 +3,15 @@
   <ItemGroup>
     <ClCompile Include="J:\cs472\final-project\src\CacheController.cpp" />
     <ClCompile Include="J:\cs472\final-project\src\CacheSimulator.cpp" />
-    <ClCompile Include="CacheSet.cpp" />
-    <ClCompile Include="CacheBlock.cpp" />
+    <ClCompile Include="J:\cs472\final-project\src\CacheBlock.cpp" />
+    <ClCompile Include="J:\cs472\final-project\src\CacheSet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="J:\cs472\final-project\src\CacheController.h" />
     <ClInclude Include="J:\cs472\final-project\src\CacheSimulator.h" />
     <ClInclude Include="J:\cs472\final-project\src\CacheStuff.h" />
-    <ClInclude Include="CacheSet.h" />
-    <ClInclude Include="CacheBlock.h" />
+    <ClInclude Include="J:\cs472\final-project\src\CacheBlock.h" />
+    <ClInclude Include="J:\cs472\final-project\src\CacheSet.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Cache Building Blocks">
